@@ -9,6 +9,7 @@ namespace TestProjectWP.Mayuri.Tests
 {
     class TestMethod1 : SetUp
     {
+        //Pass the data and perform the action on selected Element at the same time.
         [Test]
         public void DataAsParameter()
         {
@@ -24,7 +25,6 @@ namespace TestProjectWP.Mayuri.Tests
             billingobj.Zipcode.SendKeys("678912314");
             billingobj.AvailableItems.Click();
             billingobj.Comment.SendKeys("test comments");
-            Thread.Sleep(5000);
             billingobj.Submit.Click();
         }
     }

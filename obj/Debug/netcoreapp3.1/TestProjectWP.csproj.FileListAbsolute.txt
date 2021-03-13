@@ -4,7 +4,6 @@ C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\NUni
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\nunit.engine.dll
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\Ajit\data\blankForm.csv
-C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\TestData\KS_TestData.csv
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\TestProjectWP.deps.json
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\TestProjectWP.runtimeconfig.json
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\TestProjectWP.runtimeconfig.dev.json
@@ -103,7 +102,6 @@ C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\zh-H
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\TestProjectWP.csprojAssemblyReference.cache
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\TestProjectWP.AssemblyInfoInputs.cache
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\TestProjectWP.AssemblyInfo.cs
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\TestProjectWP.csproj.CoreCompileInputs.cache
@@ -111,3 +109,4 @@ C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\Test
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\TestProjectWP.dll
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\TestProjectWP.pdb
 C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\obj\Debug\netcoreapp3.1\TestProjectWP.genruntimeconfig.cache
+C:\Users\Dell\Downloads\TestProjectWP\TestProjectWP\bin\Debug\netcoreapp3.1\Mayuri\Data\TestData.csv

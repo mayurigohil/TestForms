@@ -3,6 +3,8 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
+using TestProjectWP.Mayuri.Model;
 
 namespace TestProjectWP.Mayuri.Pages
 {
@@ -15,7 +17,7 @@ namespace TestProjectWP.Mayuri.Pages
             this.driver = driver;
         }
 
-
+        //Defining all the elements of the page
         public IWebElement FirstName => driver.FindElement(By.Id("wpforms-24-field_0"));
         public IWebElement LastName => driver.FindElement(By.Id("wpforms-24-field_0-last"));
         public IWebElement Email => driver.FindElement(By.Id("wpforms-24-field_1"));
@@ -29,7 +31,8 @@ namespace TestProjectWP.Mayuri.Pages
         public IWebElement Comment => driver.FindElement(By.Id("wpforms-24-field_6"));
         public IWebElement Submit => driver.FindElement(By.Id("wpforms-submit-24"));
 
-        public void FillSubmitSameClass(String Fname, String Lname, String Emailid, String PhoneNo, String AL1, String AL2, String CityC, String StateDrop, string Zip, String Comments)
+        //Method for performing actions when data is passed through a Testcase
+        public void FillSubmit(String Fname, String Lname, String Emailid, String PhoneNo, String AL1, String AL2, String CityC, String StateDrop, string Zip, String Comments)
         {
             FirstName.SendKeys(Fname);
             LastName.SendKeys(Lname);
@@ -41,8 +44,26 @@ namespace TestProjectWP.Mayuri.Pages
             State.SelectByValue(StateDrop);
             Zipcode.SendKeys(Zip);
             Comment.SendKeys(Comments);
+            Submit.Click();
+        }
 
-
+        public void FillSubmit(DataFile Data)
+        {
+            FirstName.SendKeys(Data.FirstName);
+            LastName.SendKeys(Data.LastName);
+            Email.SendKeys(Data.Email);
+            Phone.SendKeys(Data.Phone);
+            Thread.Sleep(2000);
+            AddressLine1.SendKeys(Data.AL1);
+            Thread.Sleep(2000);
+            AddressLine2.SendKeys(Data.AL2);
+            City.SendKeys(Data.City);
+            Thread.Sleep(2000);
+            State.SelectByValue(Data.State);
+            Zipcode.SendKeys(Data.Zipcode);
+            Comment.SendKeys(Data.Comments);
+            Submit.Click();
+            Thread.Sleep(5000);
         }
     }
 }

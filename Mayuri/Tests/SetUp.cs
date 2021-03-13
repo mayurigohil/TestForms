@@ -23,6 +23,7 @@ namespace TestProjectWP.Mayuri.Tests
             driver.FindElement(By.Id("wpforms-locked-24-field_form_locker_password")).SendKeys("Testing");
             driver.FindElement(By.Id("wpforms-submit-locked-24")).Click();
 
+            TestContext.Error.WriteLine("base directory=" + AppDomain.CurrentDomain.BaseDirectory);
         }
 
         [OneTimeTearDown]

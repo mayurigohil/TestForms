@@ -27,16 +27,15 @@
 
   <ItemGroup>
     <None Update="Ajit\data\blankForm.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="TestData\KS_TestData.csv">
+    <None Update="Mayuri\Data\TestData.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Mayuri\Data\" />
-    <Folder Include="Mayuri\Model\" />
   </ItemGroup>
 
 </Project>
