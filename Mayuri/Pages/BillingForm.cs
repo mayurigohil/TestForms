@@ -22,12 +22,12 @@ namespace TestProjectWP.Mayuri.Pages
         public IWebElement LastName => driver.FindElement(By.Id("wpforms-24-field_0-last"));
         public IWebElement Email => driver.FindElement(By.Id("wpforms-24-field_1"));
         public IWebElement Phone => driver.FindElement(By.Id("wpforms-24-field_2"));
-        public IWebElement AddressLine1 => driver.FindElement(By.Id("wpforms-24-field_0"));
+        public IWebElement AddressLine1 => driver.FindElement(By.Id("wpforms-24-field_3"));
         public IWebElement AddressLine2 => driver.FindElement(By.Id("wpforms-24-field_3-address2"));
         public IWebElement City => driver.FindElement(By.Id("wpforms-24-field_3-city"));
         public SelectElement State => new SelectElement(driver.FindElement(By.Id("wpforms-24-field_3-state")));
         public IWebElement Zipcode => driver.FindElement(By.Id("wpforms-24-field_3-postal"));
-        public IWebElement AvailableItems => driver.FindElement(By.Id("wpforms-24-field_4_2"));  ////*[@id="wpforms-24-field_4_1"]
+        public IWebElement AvailableItems => driver.FindElement(By.Id("wpforms-24-field_4_2"));  
         public IWebElement Comment => driver.FindElement(By.Id("wpforms-24-field_6"));
         public IWebElement Submit => driver.FindElement(By.Id("wpforms-submit-24"));
 
@@ -43,27 +43,26 @@ namespace TestProjectWP.Mayuri.Pages
             City.SendKeys(CityC);
             State.SelectByValue(StateDrop);
             Zipcode.SendKeys(Zip);
+            AvailableItems.Click();
             Comment.SendKeys(Comments);
             Submit.Click();
         }
 
+        //Function to perform action when data is passed throgh excel sheet or and array of data
         public void FillSubmit(DataFile Data)
         {
             FirstName.SendKeys(Data.FirstName);
             LastName.SendKeys(Data.LastName);
             Email.SendKeys(Data.Email);
             Phone.SendKeys(Data.Phone);
-            Thread.Sleep(2000);
             AddressLine1.SendKeys(Data.AL1);
-            Thread.Sleep(2000);
             AddressLine2.SendKeys(Data.AL2);
             City.SendKeys(Data.City);
-            Thread.Sleep(2000);
             State.SelectByValue(Data.State);
             Zipcode.SendKeys(Data.Zipcode);
+            AvailableItems.Click();
             Comment.SendKeys(Data.Comments);
             Submit.Click();
-            Thread.Sleep(5000);
         }
     }
 }
